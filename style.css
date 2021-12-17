@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+}
+
+body > * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: right;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1175px;
+}
+
+/* Header e Nav Bar */
+.header-box {
+    width: 100%;
+    height: 145px;
+    margin-bottom: 30px;
+}
+
+#header-logo {
+    height: 75px;
+    padding-right: 20px;
+    box-shadow: 1px 0 grey;
+    float: left;
+}
+
+nav {
+    width: 100%;
+    float: left;
+}
+
+.header-box nav > * {
+    text-decoration: none;
+    line-height: calc(145px / 2); 
+    padding: 0;
+    margin-right: 10px;
+    color: grey;
+}
+
+/* Prima Sezione */
+.first-body {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.first-body .first-body-text{
+    width: 550px;
+    height: 100px;
+    color: white;
+    position: absolute;
+    bottom: 70px;
+    left: 45px;
+    z-index: 2;
+}
+
+.first-body-text > *{
+    margin: 0;
+}
+
+.overlay-pos {
+    z-index: 1;
+}
+
+.first-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Seconda Sezione */
+.second-body {
+    width: 100%;
+    height: 675px;
+    margin-bottom: 10px;
+}
+
+.second-body .second-body-title {
+    width: 100%;
+    height: 85px;
+    margin-bottom: 25px;
+}
+
+.second-body-title .second-body-title-box {
+    padding-top: 15px;
+}
+
+.second-body-title-box > * {
+    margin: 0;
+}
+
+.second-body-title-box p {
+    color: grey;
+}
+
+.second-body .row > *{
+    color: grey;
+    float: left;
+}
+
+.second-body .col-3 {
+    width: 235px;
+    min-height: 540px;
+}
+
+.second-body .col-3 img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+}
+
+.second-body .col-6 {
+    width: 667px;
+    min-height: 540px;
+    margin: 0 19px;
+}
+
+.img-box {
+    position: relative;
+    height: 205px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.second-body .col-6 img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;  
+}
+
+.col-text h4 {
+    color: black;
+    margin-bottom: 0;
+}
+
+.col-text p {
+    margin-top: 10px;
+}
+
+/* Footer */
+.copyright {
+    width: 1175px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.heart {
+    font-size: 25px;
+    color: red;
+}
+
+
+
+
